@@ -1,8 +1,11 @@
 "use client";
-import { Virtual, Navigation, Pagination } from 'swiper/modules';
+import { Virtual, Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Card from './card';
 import './slider.css';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import React, { useState, useEffect } from 'react';
 
 

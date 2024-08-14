@@ -1,0 +1,40 @@
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important; /* Customize arrow button color */
+  height: 100%  !important; /* Set height to match container */
+  width: 50px !important; /* Increase width */
+  transition: background-color 1s ease-in-out !important; /* Transition for background color */
+ position: absolute !important;
+  top: 16px !important;
+  opacity: 0.3 !important;
+    
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(0, 0, 0, 0.5) !important; /* Background color on hover */
+  border-radius: 10%;
+  opacity: 1 !important;
+
+}
+
+.swiper-pagination-bullet {
+  background: white !important; /* Customize pagination bullet color */
+}
+
+.swiper-pagination {
+  top: 10px !important; /* Position pagination at the top */
+  bottom: auto !important; /* Disable default bottom positioning */
+}
+
+.card:hover {
+    z-index: 100 !important;
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Additional styles to ensure proper z-index handling */
+  .card-container {
+    position: relative;
+    z-index: 10;
+  }

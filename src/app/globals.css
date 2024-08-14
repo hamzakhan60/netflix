@@ -2,32 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.swiper-button-next, .swiper-button-prev {
+  color: white; /* Customize arrow button color */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.swiper-pagination-bullet {
+  background: white; /* Customize pagination bullet color */
+}
+
+.swiper-pagination {
+  top: 10px; /* Position pagination at the top */
+  bottom: auto; /* Disable default bottom positioning */}
+
+
+  body{
+    background-color: #141414;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}

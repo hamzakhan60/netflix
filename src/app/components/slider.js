@@ -1,6 +1,9 @@
 "use client";
-import { Swiper, SwiperSlide } from 'swiper/react';
-
+import { Swiper, SwiperSlide } from 'swiper/react'; // Correct import path for Swiper and SwiperSlide
+import { Navigation, Pagination, Virtual } from 'swiper/modules'; // Correct import path for modules
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import Card from './card';
 import './slider.css';
 import React, { useState, useEffect } from 'react';
@@ -39,7 +42,7 @@ export default function Slider({ array, title }) {
         slidesPerView={4} // Adjust number of slides visible at once
         centeredSlides={false}
         spaceBetween={0} // Adjust spacing between slides
-        navigation={true}
+  
         style={{ overflow: 'visible' }}
       >
         {slides.map((slideContent, index) => (

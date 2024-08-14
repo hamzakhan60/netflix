@@ -42,7 +42,8 @@ export default function Slider({ array, title }) {
         slidesPerView={4} // Adjust number of slides visible at once
         centeredSlides={false}
         spaceBetween={0} // Adjust spacing between slides
-  
+        navigation={true}
+        pagination={true}
         style={{ overflow: 'visible' }}
       >
         {slides.map((slideContent, index) => (

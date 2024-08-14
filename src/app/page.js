@@ -6,7 +6,7 @@ import ShowDetails from "./components/detailPage";
 export default function Home() {
   return (
     <>
-      <ShowDetails/>
+      
     </>
   );
 }

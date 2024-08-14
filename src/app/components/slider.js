@@ -1,14 +1,14 @@
 "use client";
-import React, { useState, useEffect } from 'react';
 import { Virtual, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Card from './card';
-import './slider.css';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import Card from './card';
+import './slider.css';
+import React, { useState, useEffect } from 'react';
+
+
 
 export default function Slider({ array, title }) {
   const [slides, setSlides] = useState([]);

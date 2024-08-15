@@ -126,6 +126,7 @@ const SignUp = () => {
                                 </span>
                             </div>
                             <div className="w-1/2 mt-10 flex flex-row">
+                            
                                 <input
                                     type="text"
                                     className="py-3 px-4 block w-2/3 text-white text-xl border-white rounded-lg bg-gray-500/40"

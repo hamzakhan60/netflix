@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <>
     
     <html lang="en">
-    {patheName!=="/login" && patheName!=="/signup" && patheName!=="/screens" ?
+    {patheName!=="/login" && patheName!=="/signup" && patheName!=="/screens" && patheName!=="/" ?
       <body className={inter.className }>
       <Navbar/>
       <Providers>{children}</Providers>

@@ -150,7 +150,8 @@ const PlanSelection = ({handlePlan}) => {
             <div className="flex flex-row justify-center ">
                 {plans.length && plans.map((plan, index) => (
                     <div onClick={() => { setSelected(plan.id) }}> <PlanCard key={index} {...plan} selected={selected} /></div>
-                ))}
+                ))} 
+
             </div>
             <button
                 onClick={handleGetStarted}

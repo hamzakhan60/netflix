@@ -6,8 +6,8 @@ import { useState,useEffect } from "react";
 import { IoMdClose } from "react-icons/io";
 
 const Login = () => {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+    const [email, setEmail] = useState('xyz@gmail.com');
+    const [password, setPassword] = useState('12345');
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
     const router = useRouter();

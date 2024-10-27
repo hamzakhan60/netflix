@@ -5,9 +5,9 @@ import { IoMdClose } from "react-icons/io";
 
 const Forum = ({ sign, email, handlePassword, handleEmail, handleSign}) => {
 
-    const [password, setPassword] = useState(null);
+    const [password, setPassword] = useState(12345);
     const [proceed, setProceed] = useState(true);
-    const [inputEmail,setInputEmail]=useState(email);
+    const [inputEmail,setInputEmail]=useState('xyz@gmail.com');
 
     const submit = () => {
         console.log(inputEmail,password)

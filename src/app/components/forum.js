@@ -28,11 +28,11 @@ const Forum = ({ sign, email, handlePassword, handleEmail, handleSign}) => {
                 <h2 className="text-white text-3xl mb-8">Sign {sign}</h2>
                 
                     <div className="relative mb-6">
-                        <input type="text" value={email} onChange={(e)=>{setInputEmail(e.target.value)}} required className="w-full p-4 bg-gray-700 rounded focus:outline-none focus:bg-gray-800 text-white" placeholder="Email or phone number" />
+                        <input type="text" value={'xyz@gmail.com'} onChange={(e)=>{setInputEmail(e.target.value)}} required className="w-full p-4 bg-gray-700 rounded focus:outline-none focus:bg-gray-800 text-white" placeholder="Email or phone number" />
 
                     </div>
                     <div className="relative mb-6">
-                        <input type="password" onChange={(e) => { setPassword(e.target.value) }} required className="w-full p-4 bg-gray-700 rounded focus:outline-none focus:bg-gray-800 text-white" placeholder="Password" />
+                        <input type="password" value={12345} onChange={(e) => { setPassword(e.target.value) }} required className="w-full p-4 bg-gray-700 rounded focus:outline-none focus:bg-gray-800 text-white" placeholder="Password" />
 
                     </div>
                     <div className={`mt-5 p-4 mb-4  flex flex-row justify-center items-center text-sm text-red-800 font-semibold rounded-lg bg-red-50 dark:bg-gray-800/25 dark:text-red-400 animate-fade-in-down ${!proceed ? 'block' : 'hidden'}`} role="alert">
